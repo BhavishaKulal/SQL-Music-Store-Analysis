@@ -83,14 +83,14 @@ LIMIT 10;
 ## Insights
 - Total Revenue: The music store generated a total revenue of 4,709 from invoices, reflecting the overall sales performance and revenue generated from customer transactions.
 
-Top Invoice Values: The top 3 invoice totals highlight the highest-value transactions, with the largest invoice reaching 23.76. These high-value transactions indicate significant purchases by certain customers.
+- Top Invoice Values: The top 3 invoice totals highlight the highest-value transactions, with the largest invoice reaching 23.76. These high-value transactions indicate significant purchases by certain customers.
 
-Invoice Distribution by Country: The analysis reveals that USA has the highest number of invoices, suggesting it is the primary market for the store. In contrast, Argentina shows the lowest number, which may indicate a less engaged market or potential for growth.
+- Invoice Distribution by Country: The analysis reveals that USA has the highest number of invoices, suggesting it is the primary market for the store. In contrast, Argentina shows the lowest number, which may indicate a less engaged market or potential for growth.
 
-Best City for Promotion: The city with the highest sum of invoice totals is Prague, making it an ideal location for hosting promotional events such as a Music Festival. This city has demonstrated strong sales performance.
+- Best City for Promotion: The city with the highest sum of invoice totals is Prague, making it an ideal location for hosting promotional events such as a Music Festival. This city has demonstrated strong sales performance.
 
-Top Customer: The best customer, based on total spending, is R.Madhav who has spent a total of 144.54. This customer is a key contributor to the store’s revenue and may be targeted for special offers or loyalty programs.
+- Top Customer: The best customer, based on total spending, is R.Madhav who has spent a total of 144.54. This customer is a key contributor to the store’s revenue and may be targeted for special offers or loyalty programs.
 
-Rock Music Listeners: The query identified Rock music enthusiasts who are engaged with the genre. This list, ordered by email, includes customers who can be targeted for Rock-specific promotions and events.
+- Rock Music Listeners: The query identified Rock music enthusiasts who are engaged with the genre. This list, ordered by email, includes customers who can be targeted for Rock-specific promotions and events.
 
-Top Rock Bands: The top 10 Rock bands, based on the number of Rock tracks they have produced the artist names. These bands are the most prolific in the Rock genre and could be considered for collaborations or featured promotions.
+- Top Rock Bands: The top 10 Rock bands, based on the number of Rock tracks they have produced the artist names. These bands are the most prolific in the Rock genre and could be considered for collaborations or featured promotions.
