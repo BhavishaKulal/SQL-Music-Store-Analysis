@@ -4,12 +4,15 @@ The Music Store Analysis project aims to evaluate various aspects of sales and c
 
 **1.Employee Hierarchy Analysis**:
 - Identify the senior-most employee based on job title.
+- 
 **2.Invoice Analysis**:
 - Determine which countries have the highest number of invoices.
 - Find the top 3 highest total invoices.
 - Identify the city with the highest sum of invoice totals to target for promotional events.
+- 
 **3.Customer Spending Analysis**:
 - Determine the best customer based on total spending.
+- 
 **4.Music Preferences**:
 - Identify Rock music listeners and retrieve their contact details.
 - Determine the top 10 rock bands based on the number of Rock tracks they have produced.
@@ -19,6 +22,7 @@ The Music Store Analysis project aims to evaluate various aspects of sales and c
 **1.Senior Most Employee**:
 
 SELECT * FROM employee ORDER BY levels DESC LIMIT 1;
+
 **2.Countries with Most Invoices**:
 
 SELECT COUNT(*) AS c, billing_country 
@@ -28,21 +32,20 @@ ORDER BY c DESC;
 
 **3.Top 3 Invoice Totals**:
 
-
 SELECT total 
 FROM invoice 
 ORDER BY total DESC 
 LIMIT 3;
-**4.City with Highest Invoice Total**:
 
+**4.City with Highest Invoice Total**:
 
 SELECT SUM(total) AS invoice_total, billing_city 
 FROM invoice 
 GROUP BY billing_city 
 ORDER BY invoice_total DESC 
 LIMIT 1;
-**5.Best Customer**:
 
+**5.Best Customer**:
 
 SELECT customer.customer_id, customer.first_name, customer.last_name, SUM(invoice.total) AS total 
 FROM customer 
@@ -50,8 +53,8 @@ JOIN invoice ON customer.customer_id = invoice.customer_id
 GROUP BY customer.customer_id 
 ORDER BY total DESC 
 LIMIT 1;
-**6.Rock Music Listeners**:
 
+**6.Rock Music Listeners**:
 
 SELECT DISTINCT email, first_name, last_name 
 FROM customer 
@@ -64,6 +67,7 @@ WHERE track_id IN (
     WHERE genre.name = 'Rock'
 ) 
 ORDER BY email;
+
 **7.Top 10 Rock Bands by Track Count**:
 
 SELECT artist.artist_id, artist.name, COUNT(track.track_id) AS number_of_songs 
